@@ -48,8 +48,8 @@ class PaymentService {
 
       final response = await http.post(
         Uri.parse(BapgConstants.bapgBaseUrl + BapgConstants.bapgEndpoint),
-        headers: {'Content-Type': 'application/json'},
-        body: jsonEncode(data),
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+        body: data,
       );
 
       if (response.statusCode == 200) {
