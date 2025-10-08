@@ -31,7 +31,7 @@ class PaymentService {
 
       var data = {
         'HS_ChannelId': '1001',
-        'HS_IsRedirectionRequest': '1',
+        'HS_IsRedirectionRequest': '0',
         'HS_MerchantHash': merchantDetails.merchantHash,
         'HS_MerchantId': merchantDetails.merchantId,
         'HS_MerchantPassword': merchantDetails.merchantPass,
